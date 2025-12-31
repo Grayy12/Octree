@@ -41,8 +41,9 @@
 	@class Octree
 ]=]
 
-local OctreeNode = require("OctreeNode")
-local OctreeRegionUtils = require("OctreeRegionUtils")
+local OctreeNode =
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/Octree/refs/heads/main/OctreeNode.lua"))()
+local OctreeRegionUtils = loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/Octree/refs/heads/main/OctreeRegionUtils.lua"))()
 
 local EPSILON = 1e-9
 
