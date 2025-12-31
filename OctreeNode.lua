@@ -14,9 +14,7 @@
 	@class OctreeNode
 ]=]
 
-local require = require(script.Parent.loader).load(script)
-
-local OctreeRegionUtils = require("OctreeRegionUtils")
+local OctreeRegionUtils = loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/Octree/refs/heads/main/OctreeRegionUtils.lua"))()
 
 local OctreeNode = {}
 OctreeNode.ClassName = "OctreeNode"
